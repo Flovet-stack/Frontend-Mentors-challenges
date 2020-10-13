@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header Design ************************************************************/
+header {
+    width: 100vw;
+    height: 16vh;
+    display: flex;
+}
+#header-sub {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+#logo {/*Logo in header*/
+    width: 30%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+header nav {/* header navigation menu*/
+    width: 70%;
+    height: 100%;
+    text-align: right;
+}
+header ul {
+    width: auto;
+    height: 100%;
+    display: flex;
+    float: right;
+}
+header li {
+    list-style-type: none;
+    margin: 0 20px;
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+header a {
+    text-decoration: none;
+    color: hsl(229, 31%, 21%);
+    transition-duration: .5s;
+}
+header a:hover {
+    color: hsl(0, 94%, 66%);
+    transition-duration: .3s;
+}
+#login-btn {
+    background-color: hsl(0, 94%, 66%);
+    padding: 10px 23px;
+    color: #fff;
+    border: 2px solid hsl(0, 94%, 66%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#login-btn:hover {
+    background-color: #fff;
+    color: hsl(0, 94%, 66%);
+}
+
+/* HERO SECTON ********************************************** */
+#hero {
+    width: 100%;
+    height: 70vh;
+    background: url(images/);
+    background-repeat: no-repeat;
+}
+#hero-sub {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+#hero-content {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    background-color: aqua;
+}
+#hero-img {
+    width: 50%;
+    height: 70vh;
+    background-color: antiquewhite;
+    display: grid;
+    align-content: center;
+    text-align: right;
+}
+#hero img {
+    width: 90%;
+    margin: 0 auto;
+    background-color: brown;
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-family: tahoma;
+}
+#container {
+    width: 60%;
+    height: 100%;
+    background-image: url(images/bg-pattern-desktop.svg);
+    /* background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+}
+#image {
+    width: 40%;
+    height: 100%;
+    background: url(images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#wrapper {
+    width: 60%;
+    height: 85vh;
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+header {
+    margin-bottom: 120px;
+}
+span {
+    color: hsl(0, 36%, 70%);
+}
+h1 {
+    color: hsl(0, 6%, 24%);
+    font-size: 75px;
+    font-weight: 100;
+    line-height: .9;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+}
+p {
+    color: hsl(0, 36%, 70%);
+    line-height: 2;
+    width: 80%;
+    margin-bottom: 40px;
+}
+form {
+    width: 85%;
+    height: 50px;
+}
+input[type="email"] {
+    height: 100%;
+    width: 85%;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border:2px solid hsl(0, 17%, 83%);
+    padding-left: 25px;
+}
+input[type="email"]::placeholder {
+    color: hsl(0, 17%, 83%);
+}
+button {
+    left: 530px;
+    width: 85px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    position: absolute;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0 6px 10px 2px hsl(0, 60%, 92%);
+    transition-duration: .4s;
+}
+button:hover {
+    width: 90px;
+    height: 52px;
+    box-shadow: 0 8px 15px 3px hsl(0, 36%, 82%);
+    transition-duration: .4s;
+}

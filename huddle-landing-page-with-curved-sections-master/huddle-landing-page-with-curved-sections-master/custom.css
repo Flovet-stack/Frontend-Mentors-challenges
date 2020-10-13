@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body  {
+    width: 100vw;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+    color: hsl(192, 100%, 9%);
+}
+h1, 
+h2, 
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+button {
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition-duration: .3s;
+}
+button:hover {
+    transition-duration: .3s;
+}
+
+/* header design ************************************** */
+header {
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    align-content: center;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header button {
+    background-color: #fff;
+    color: hsl(322, 100%, 66%);
+    font-size: 18px;
+    width: 150px;
+    hanging-punctuation: 30px;
+    border: 2px solid hsl(322, 100%, 66%);
+}
+header button:hover {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
+/* hero design  */
+#hero {
+    padding: 150px 0;
+    width: 100%;
+    height: auto;
+}
+#hero .container {
+    text-align: center;
+}
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#hero p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#hero button {
+    width: 30%;
+    font-size: 18px;
+    height: 60px;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 100px;
+    border: 2px solid hsl(322, 100%, 66%);
+}
+#hero button:hover {
+    background-color: #fff;
+    color: hsl(322, 100%, 66%);
+}
+#hero img {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* hero2 design*************************************************** */
+#hero2 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 200px;
+    background: url(images/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100vw;
+    background-position: bottom;
+}
+#hero2 .container {
+    display: flex;
+}
+.hero2-sub {
+    width: 50%;
+    padding-left: 15%;
+}
+.hero2-sub span {
+    font-size: 80px;
+    font-weight: 1000;
+}
+.hero2-sub p {
+    color: #888;
+}
+
+/* *************************************************** */
+
+#grow,
+#flowing,
+#your {
+    width: 100%;
+    height: auto;
+}
+#grow .container,
+#flowing .container,
+#your .container {
+    display: flex;
+    height: 40vh;
+}
+/* ******************************************************* */
+
+/* grow together section design ********************************* */
+#grow {
+    background-color: hsl(207, 100%, 98%);
+}
+
+/* flowing conversation section ****************** */
+#flowing {
+    width: 100%;
+    height: 40vh;
+    background: url(images/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100vw;
+    background-position: top;
+}

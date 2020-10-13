@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(images/bg-intro-desktop.png);
+    /* background-repeat: no-repeat; */
+    background-color: hsl(0, 100%, 74%);
+    /* background-size: cover; */
+    display: grid;
+    align-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#container {
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+}
+#hero {
+    width: 50%;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    color: #fff;
+}
+h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 22px;
+}
+#register {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}

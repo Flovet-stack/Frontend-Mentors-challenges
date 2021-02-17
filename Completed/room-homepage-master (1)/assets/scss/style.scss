@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    width: 100vw;
+    // font-size: 12px;
+}
+a {
+    text-decoration: none;
+}
+
+.hero-img { 
+    grid-area: hero-image;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        .hamburger {
+            display: none;
+        }
+        width: 60%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 4%;
+        top: 50px;
+        img {
+            width: 100px;
+            padding-right: 50px;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                list-style-type: none;
+                a  {
+                    font-weight: bold;
+                    color: #fff;
+                    padding:0 20px 6px 0;
+
+                    span {
+                        padding-bottom: 5px;
+                        &:hover {
+                            border-bottom: 3px solid #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.hero-text { 
+    grid-area: hero-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .hero-text-inner {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 100px;
+        * {
+            padding-bottom: 20px;
+        }
+
+        p {
+            color:  hsl(0, 0%, 63%);
+        }
+
+        .shop-now {
+            display: flex;
+            align-items: flex-start;
+            color: hsl(0, 0%, 0%);
+            letter-spacing: 5px;
+            &:hover {
+                color: hsla(0, 0%, 63%, 0.5);
+            }
+            img {
+                padding-left: 20px;
+                &:hover {
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+
+    .carousel-btn {
+        background-color: #000;
+        width: 105px;
+        // padding: 12px 0;
+        align-self: flex-start;
+        justify-self: flex-end;
+        position: relative;
+        top: 41.5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        button {
+            background-color: transparent;
+            border: none;
+            padding: 22px 20px;
+        
+            &:hover {
+                background-color: hsla(0, 0%, 63%, 0.5);
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+.about-dark { 
+    grid-area: about-dark;
+    position: relative;
+    top: -4px;
+}
+.about-text { 
+    grid-area: about-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+     h2 {
+         padding-bottom: 20px;
+     }
+     p {
+         color:  hsl(0, 0%, 63%);
+     }
+}
+.about-light { 
+    grid-area: about-light;
+    position: relative;
+    top: -4px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-areas: 'hero-image hero-image hero-image hero-image hero-image hero-image hero-text hero-text hero-text hero-text'
+                         'hero-image hero-image hero-image hero-image hero-image hero-image hero-text hero-text hero-text hero-text'
+                         'hero-image hero-image hero-image hero-image hero-image hero-image hero-text hero-text hero-text hero-text'
+                         'about-dark about-dark about-dark about-text about-text about-text about-text about-light about-light about-light'
+                         'about-dark about-dark about-dark about-text about-text about-text about-text about-light about-light about-light';
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        width: 100vw;
+    }
+    
+    .main-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        
+        width: 60%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 4%;
+        top: 50px;
+        img {
+            width: 100px;
+            padding-right: 40px;
+        }
+        ul {
+            display: none;
+            
+            li {
+                list-style-type: none;
+                a  {
+                    font-weight: bold;
+                    color: #fff;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    .hero-text { 
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        .hero-text-inner {
+            width: 70%;
+            margin: 0 auto;
+            * {
+                padding-bottom: 20px;
+            }
+    
+            p {
+                color:  hsl(0, 0%, 63%);
+            }
+    
+            .shop-now {
+                display: flex;
+                align-items: flex-start;
+                color: hsl(0, 0%, 0%);
+                letter-spacing: 5px;
+                img {
+                    padding-left: 20px;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    
+        .carousel-btn {
+            background-color: #000;
+            width: 105px;
+            align-self: flex-start;
+            justify-self: flex-end;
+            position: absolute;
+            top: 183px;
+            left: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+    
+            button {
+                background-color: transparent;
+                border: none;
+                padding: 22px 20px;
+            }
+            
+        }
+    }
+
+    .about-dark { 
+        width: 100%;
+    }
+
+    .about-text { 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 40px;
+         h2 {
+             padding-bottom: 15px;
+         }
+         p {
+             color:  hsl(0, 0%, 63%);
+             padding-bottom: 15px;
+         }
+    }
+    .about-light { 
+       width: 100%;
+    }
+  }

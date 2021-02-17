@@ -1,0 +1,326 @@
+:root {
+    --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+    --Light-Grayish-Blue: hsl(234, 14%, 74%);
+    --Grayish-Blue: hsl(233, 13%, 49%);
+    --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+    --light-purple: hsl(236, 72%, 79%);
+    --purple:  hsl(237, 63%, 64%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* setting the background of the page */
+body {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--Very-Light-Grayish-Blue);
+    overflow: hidden;
+}
+#top-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 23vw;
+}
+#bottom-bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 22vw;
+}
+
+/* styling the main section of the page */
+#main {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 60vw;
+    height: 80vh;
+    text-align: center;
+    /* background-color: red; */
+}
+h1 {
+    color: var(--Grayish-Blue);
+    margin-bottom: 3rem;
+}
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.filter h3 {
+    color: var(--Light-Grayish-Blue);
+    font-weight: 200;
+}
+#toggler {
+    display: none;
+}
+.toggler {
+    position: absolute;
+    transform: translateX(-42%);
+    width: 60px;
+    height: 30px;
+    background: linear-gradient(57deg, var(--light-purple), var(--purple));
+    border-radius: 50px;
+}
+.toggler-sub {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+    transition-duration: .5s;
+    transform: translateX(30px);
+}
+.filter span {
+    width: 100px;
+    height: 20px;
+}
+#monthly {
+    width: 100%;
+    height: 55vh;
+    transition-duration: .5s;
+    opacity: 1;
+    animation: grow .5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+}
+#annually {
+    width: 100%;
+    height: 55vh;
+    transition-duration: .5s;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.side {
+    width: 32.33%;
+    height: 100%;
+    background-color: #fff;
+    padding: 3rem;
+    color: var(--Grayish-Blue);
+    font-weight: 700;
+}
+.center {
+    width: 32.33%;
+    background: linear-gradient(150deg, var(--light-purple), var(--purple));
+    /* background-color: rgba(255, 192, 203, 0.308); */
+    border-radius: 10px;
+    transform: scale(1.1);
+    padding: 3rem;
+    color: #fff;
+    font-weight: 700;
+}
+h2 {
+    font-size: 20px;
+}
+.master {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 3px 20px 10px rgba(24, 24, 24, 0.021);
+}
+.basic {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 3px 3px 20px 10px rgba(24, 24, 24, 0.021);
+}
+
+.price {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dollar {
+    font-size: 50px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--Light-Grayish-Blue);
+    margin: 1rem 0;
+}
+.center hr {
+    border: none;
+    height: 1px;
+    background-color: var(--Very-Light-Grayish-Blue);
+    margin: 1rem 0;
+}
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(150deg, var(--light-purple), var(--purple));
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 1.6rem;
+    transition-duration: .5s;
+    outline: none;
+}
+button:hover {
+    border: 1px solid var(--purple);
+    transition-duration: .5s;
+    color: var(--purple);
+    background: #fff;
+}
+.center button {
+    background: #fff;
+    color: var(--purple);
+}
+.center button:hover {
+    border: 1px solid #fff;
+    transition-duration: .5s;
+    color: #fff;
+    background: transparent;
+}
+
+
+
+/* Creating the toggle filter and animations */
+input[type="checkbox"]:checked ~ #monthly {
+    opacity: 0;
+    transition-duration: .5s;
+    animation: shrink .5s ease-in-out;
+}
+input[type="checkbox"]:checked ~ #annually {
+    opacity: 1;
+    transform: translateY(-100%);
+    display: flex;
+    transition-duration: .5s;
+}
+input[type="checkbox"]:checked ~ .toggler {
+    color: green;
+}
+input[type="checkbox"]:checked ~ .toggler .toggler-sub {
+    transform: translateX(0px);
+    transition-duration: .5s;
+}
+@keyframes grow {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+.attribution {
+    font-size: 11px; text-align: center; 
+    position: absolute;
+    top: 100vh;
+    left: 50vw;
+    margin: 0;
+    transform: translate(-50%, -100%);
+    color: var(--Grayish-Blue);
+    z-index: 3;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 800px) {
+
+    /* setting the background of the page */
+    body {
+        overflow: scroll;
+    }
+    #top-bg {
+        width: 30vw;
+        height: 70vh;
+    }
+    #bottom-bg {
+        width: 30vw;
+        height: 50vh;
+    }
+    
+    /* styling the main section of the page */
+    .container {
+        width: 90vw;
+        height: auto;
+        margin-top: 2rem;
+        /* background-color: red; */
+    }
+    h1 {
+        margin-bottom: 2rem;
+    }
+    .filter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+    #monthly {
+        display: grid;
+        justify-content: center;
+    }
+    #annually {
+        display: grid !important;
+        justify-content: center;
+    }
+    .side {
+        width: 85vw;
+        height: 100%;
+    }
+    .center {
+        width: 85vw;
+        border-radius: 10px;
+        transform: scale(1);
+        margin: 1rem 0;
+        padding: 3rem;
+        color: #fff;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .master {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    .pro {
+        box-shadow: 3px 3px 20px 10px rgba(24, 24, 24, 0.021);}
+    .basic {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .attribution {
+        font-size: 11px; text-align: center; 
+        position: fixed;
+        top: 100%;
+        left: 50vw;
+        margin: 0;
+        transform: translate(-50%, -100%);
+        color: var(--Grayish-Blue);
+        z-index: 3;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%); 
+    }
+}

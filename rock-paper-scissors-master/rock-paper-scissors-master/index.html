@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
   
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
-  Score
-  Rules
+  <!-- Score
+  
 
   You Picked
   The House Picked
@@ -17,21 +20,74 @@
   You Win
   You Lose
 
-  Play Again
+  Play Again -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
+  <div class="wrapper">
+    <header>
+      <div class="game-name"><img src="images/logo.svg" alt=""></div>
+      <div class="score">
+        <h3>score</h3>
+        <div class="score-value">12</div>
+      </div>
+    </header>
+    <div class="game-canvas">
+      <div class="game-play">
+        <div class="game-play-sub">
+          <div class="con">
+            <div class="con-1">
+              <div id="paper">
+                <div class="card-sub"><img src="images/icon-paper.svg" alt=""></div>
+              </div>
+            </div>
+            <div class="con-2">
+              <div id="scissors">
+                <div class="card-sub"><img src="images/icon-scissors.svg" alt=""></div>
+              </div>
+            </div>
+            <div id="comp"></div>
+          </div>
+          <div class="con-3">
+            <div id="rock">
+              <div class="card-sub"><img src="images/icon-rock.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game-results"></div>
+    </div>
+  </div>
+
+
+  <button class="rules-btn">Rules</button>
+  <div class="modal-container">
+    <div class="modal-body">
+      <div class="modal-head">
+        <div class="modal-title">Rules</div>
+        <div class="close-modal">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="modal-content">
+        <img src="images/image-rules.svg" alt="">
+      </div>
+    </div>
+  </div>
 
 
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+  <script src="script.js"></script>
 </body>
 </html>

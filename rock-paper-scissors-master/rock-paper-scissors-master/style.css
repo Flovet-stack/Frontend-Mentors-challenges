@@ -1,0 +1,374 @@
+:root {
+    --body-1: hsl(214, 47%, 23%);
+    --body-2: hsl(237, 49%, 15%);
+    /* --rock-1: hsl(349, 71%, 52%); */
+    --rock-1: hsl(349, 72%, 48%);
+    --rock-2: hsl(349, 70%, 56%);
+    /* --paper-1: hsl(230, 89%, 62%); */
+    --paper-1: hsl(230, 82%, 59%);
+    --paper-2: hsl(230, 89%, 65%);
+    /* --scissors-1: hsl(39, 89%, 49%); */
+    --scissors-1: hsl(39, 90%, 45%);
+    --scissors-2: hsl(40, 84%, 53%);
+    --Header-Outline: hsl(217, 16%, 45%);
+
+    /* TEXT COLORS */
+    --Dark-Text: hsl(229, 25%, 31%);
+    --Score-Text: hsl(229, 64%, 46%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at top, var(--body-1) 60%, var(--body-2));
+    display: grid;
+    justify-content: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.wrapper {
+    width: 45vw;
+    height: 100vh;
+    /* background-color: red; */
+    /* margin-top: 3rem; */
+}
+.rules-btn {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    padding: 1rem 3rem;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition-duration: .3s;
+    outline: none;
+    cursor: pointer;
+}
+.rules-btn:hover {
+    color: var(--body-2);
+    background-color: #fff;
+    border-radius: 10px;
+    transition-duration: .3s;
+}
+
+
+/* STYLING THE HEADER */
+header {
+    width: 100%;
+    height: 13vh;
+    border-radius: 20px;
+    border: 3px solid var(--Header-Outline);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+.game-name {
+    width: 13vh;
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+.game-name img {
+    height: 100%;
+}
+.score {
+    width: calc(13vh - 0rem);
+    height: calc(13vh - 2.4rem);
+    background-color: #fff;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.score h3 {
+    color: var(--Score-Text);
+    font-weight: 600;
+    font-size: 14px;
+    /* margin-bottom: .2rem; */
+}
+.score-value {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--Header-Outline);
+}
+
+/* CREATING THE GAME CANVAS */
+.game-canvas {
+    width: 100%;
+    height: 82vh;
+    margin: 0 auto;
+    /* background-color: green; */
+}
+.game-play {
+    width: 100%;
+    height: 70%;
+    /* background-color: blue; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.game-play-sub {
+    width: 60vh;
+    height: 50vh;
+    background: url(images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: brown; */
+}
+.con {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    transition-duration: .3s;
+}
+.con-1 {
+    width: 50%;
+    height: 100%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .3s;
+    position: relative;
+}
+.con-2 {
+    width: 50%;
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .3s;
+    position: relative;
+}
+.con-3 {
+    width: 50%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-duration: .3s;
+}
+.game-results {
+    width: 100%;
+    height: 30%;
+    background-color: green;
+}
+#comp {
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* CREATING THE GAME CARDS */
+#rock,
+#paper,
+#scissors {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .3s;
+}
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+#paper {
+    background-color: var(--paper-2);
+    box-shadow: 0px 8px 0px 0px var(--paper-1);
+}
+#rock {
+    background-color: var(--rock-2);
+    box-shadow: 0px 8px 0px 0px var(--rock-1);
+}
+#scissors {
+    background-color: var(--scissors-2);
+    box-shadow: 0px 8px 0px 0px var(--scissors-1);
+}
+.card-sub {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: inset 0px 8px 0px 0px rgba(8, 133, 206, 0.164);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CREATING THE MODAL */
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(19, 18, 18, 0.534);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-body {
+    background-color: #fff;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 20px;
+}
+.modal-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding: 0 3rem;
+}
+.modal-title {
+    text-transform: uppercase;
+    color: var(--Dark-Text);
+    font-weight: 700;
+    font-size: 30px;
+}
+.close-modal {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    align-items: center;
+    transition-duration: .3s;
+}
+.close-modal:hover {
+    background-color: rgba(12, 11, 12, 0.109);
+    transition-duration: .3s;
+    border-radius: 20px;
+}
+.close-modal span {
+    display: block;
+    width: 30px;
+    height: 6px;
+    background-color: var(--Header-Outline);
+    border-radius: 20px;
+}
+.close-modal span:first-child {
+    position: relative;
+    transform: rotate(45deg);
+    margin-top: 7px;
+}
+.close-modal span:last-child {
+    position: relative;
+    transform: rotate(-45deg);
+    margin-top: -22px;
+}
+.modal-content {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    text-align: center;
+}
+.modal-content img {
+    width: 70%;
+}
+.hide-modal {
+    animation: hide-modal .5s linear;
+}
+.close-modal-body {
+    animation: close-modal-body .5s linear;
+}
+.show-modal {
+    animation: show-modal .5s linear;
+}
+.open-modal-body {
+    animation: open-modal-body .5s linear;
+}
+@keyframes hide-modal {
+    0% {
+        background-color: rgba(19, 18, 18, 0.534);
+        transition-duration: .5s;
+        transform: scale(1);
+    }
+    80% {
+        background-color: rgba(19, 18, 18, 0);
+        transition-duration: .5s;
+        transform: scale(1);
+    }
+    100% {
+        background-color: rgba(19, 18, 18, 0);
+        transition-duration: .5s;
+    }
+}
+@keyframes show-modal {
+    0% {
+        background-color: rgba(19, 18, 18, 0);
+        transition-duration: .5s;
+        transform: scale(1);
+    }
+    80% {
+        background-color: rgba(19, 18, 18, 0.534);
+        transition-duration: .5s;
+        transform: scale(1);
+    }
+    100% {
+        background-color: rgba(19, 18, 18, 0.534);
+        transition-duration: .5s;
+    }
+}
+@keyframes close-modal-body {
+    0% {
+        transform: scale(1);
+        transition-duration: .5s;
+    }
+    20% {
+        transform: scale(1.1);
+        transition-duration: .5s;
+    }
+    40% {
+        transform: scale(1.2);
+        transition-duration: .5s;
+    }
+    100% {
+        transform: scale(0);
+        transition-duration: .5s;
+    }
+} 
+@keyframes open-modal-body {
+    0% {
+        transform: scale(0);
+        transition-duration: .5s;
+    }
+    60% {
+        transform: scale(1.2);
+        transition-duration: .5s;
+    }
+    80% {
+        transform: scale(1.1);
+        transition-duration: .5s;
+    }
+    100% {
+        transform: scale(1);
+        transition-duration: .5s;
+    }
+} 

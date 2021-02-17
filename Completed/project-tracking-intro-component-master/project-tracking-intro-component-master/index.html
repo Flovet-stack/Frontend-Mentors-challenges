@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <!-- custom css  -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="body-bg"></div>
+
+  <div class="container">
+    <div class="con-sub">
+      <header>
+        <div class="logo"><img src="images/logo.svg" alt=""></div>
+        <img src="images/icon-hamburger.svg" class="hamburger" alt="">
+        <img src="images/icon-close.svg" class="close" alt="">
+        <nav>
+          <ul>
+            <li><a href="">Products</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <hr>
+            <li class="dot"></li>
+            <li class="login"><a href="">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <section class="main-0">
+        </section>
+        <section class="main-1">
+          <span>
+            <div class="main-1-1"><span class="new">New</span>Monograph Dashboard</div>
+            <h1>Powerful Insights Into Your Team</h1>
+            <p>Project planning and time tracking for agile teams</p>
+            <div class="main-1-2">
+              <a href="#">Schedule a demo</a>
+              to see a live preview 
+            </div>
+          </span>
+        </section>
+        <section class="main-2">
+          <img src="images/illustration-devices.svg" alt="">
+        </section>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Flovet-stack</a>.
+    </p>
+  </footer>
+
+  <script src="jquery/jquery.js"></script>
+  <script>
+    $('.hamburger').on("click", () => {
+      $("nav").css({
+        "display": "block",
+        "transform": "scale(1)",
+        "opacity": "1",
+        "transition-duration": ".3s"
+      })
+      $(".hamburger").css({
+        "display": "none"
+      })
+      $(".close").css({
+        "display": "block",
+        "opacity": "1"
+      })
+    });
+    $(".close").on("click", () => {
+      $(".hamburger").css({
+        "display": "block"
+      })
+      $(".close").css({
+        "display": "none"
+      })
+      $("nav").css({
+        "transform": "scale(0)",
+        "opacity": "0",
+        "transition-duration": ".3s"
+      })
+      // $("nav").addClass("disappear")
+    })
+  </script>
+</body>
+</html>

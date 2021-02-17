@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.wrapper {
+    width: 50vw;
+    height: 40vh;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.01),
+    0 -6.7px 5.3px rgba(0, 0, 0, 0.01),
+    0 12.5px 10px rgba(0, 0, 0, 0.01),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.01),
+    0 21.8px 33.4px rgba(0, 0, 0, 0.01),
+    0 80px 80px rgba(0, 0, 0, 0.02);
+    border-radius: 20px;
+    display: flex;
+}
+.img {
+    width: 40%;
+    height: 100%;
+    background: url(images/drawers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.content {
+    width: 60%;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 3rem;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+}
+h1 {
+    font-size: 28px;
+    /* margin-bottom: 1rem; */
+    color: hsl(217, 19%, 35%);
+    font-weight: 500;
+}
+p {
+    color: hsl(214, 17%, 51%);
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+/* creating the bottom information card */
+.info-card {
+    width: 100%;
+    /* background-color: red; */
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.profile-card {
+    width: auto;
+    display: flex;
+}
+.card-img {
+    width: 45px;
+    height: 45px;
+    background: url(images/avatar-michelle.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: .6rem;
+}
+.card-content {
+    width: auto;
+    height: 45px;
+}
+.card-name {
+    width: auto;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    color: hsl(217, 19%, 35%);
+}
+.card-date {
+    width: auto;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    color: hsl(214, 17%, 51%);
+}
+.share-btn {
+    width: 45px;
+    height: 45px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .3s;
+}
+.share-btn:hover {
+    background-color: hsl(214, 17%, 51%);
+    transition-duration: .3s;
+}
+.share-btn:hover path {
+    fill: #fff !important;
+    transition-duration: .3s; 
+}
+.share-btn path {
+    fill:  hsl(214, 17%, 51%) !important;
+    transition-duration: .3s;
+}
+
+/* creating the share menu */
+.share {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(132.5%, -200%);
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.01),
+    0 -6.7px 5.3px rgba(0, 0, 0, 0.01),
+    0 12.5px 10px rgba(0, 0, 0, 0.01),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.01),
+    0 21.8px 33.4px rgba(0, 0, 0, 0.01),
+    0 80px 80px rgba(0, 0, 0, 0.02);
+    opacity: 0;
+    /* z-index: -1; */
+    transition-duration: .3s;
+    padding: 1rem;
+}
+.share p {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* margin-right: 50px; */
+}
+.share div {
+    display: flex;
+    /* left: 15%; */
+    /* margin-left: 25px; */
+}
+.share div img {
+    width: 23px;
+    margin-left: 1rem;
+}
+.share::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 15px;
+    background-color: hsl(217, 19%, 35%);
+    position: relative;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
+    transition-duration: .3s;
+    z-index: 4;
+}
+
+.share.show {
+    transform: translate(132.5%, -150%);
+    opacity: 1;
+    z-index: 1;
+    transition-duration: .3s;
+}
+
+@media screen and (max-width:764px) {
+    .wrapper {
+        width: 80vw;
+        height: 80vh;
+        box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.01),
+        0 -6.7px 5.3px rgba(0, 0, 0, 0.01),
+        0 12.5px 10px rgba(0, 0, 0, 0.01),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.01),
+        0 21.8px 33.4px rgba(0, 0, 0, 0.01),
+        0 80px 80px rgba(0, 0, 0, 0.02);
+        border-radius: 20px;
+        display: grid;
+    }
+    .img {
+        width: 80vw;
+        height: 30vh;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    .content {
+        width: 100%;
+        height: 50vh;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding: 2rem;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 18px;
+    }
+    
+    
+    /* creating the share menu */
+    .share-btn.index {
+        z-index: 2;
+        position: relative;
+        transform: translateY(20px);
+    }
+    .share {
+        width: 80vw;
+        height: 90px;
+        background-color: hsl(217, 19%, 35%);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        position: absolute;
+        left: 10vw;
+        transform: translate(0, 0);
+        box-shadow: 0px;
+        opacity: 0;
+        z-index: -1;
+        transition-duration: .3s;
+    }
+    .share::before {
+        content: "";
+        display: block;
+        width: 0px;
+        height: 0px;
+        background-color: hsl(217, 19%, 35%);
+        position: relative;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -2px);
+        clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 0%);
+        transition-duration: .3s;
+    }
+    
+    .share.show {
+        position: absolute;
+        left: 10vw;
+        transform: translate(0, 0);
+        opacity: 1;
+        z-index: 1;
+        transition-duration: .3s;
+    }
+    .share p {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        /* margin-right: 50px; */
+    }
+    .share div {
+        display: flex;
+        left: 15%;
+        margin-right: 8rem;
+    }
+    .share div img {
+        width: 23px;
+        margin-left: 1rem;
+    }
+}

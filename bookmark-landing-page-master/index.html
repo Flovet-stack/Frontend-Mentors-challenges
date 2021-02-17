@@ -31,12 +31,13 @@
 
   <!-- Hero Section of the page -->
   <div id="hero">
+    <div class="hero-bg"></div>
     <div id="hero-sub">
       <div id="hero-content">
         <span>
           <h1>A Simple Bookmark Manager</h1>
-          <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sitesloadinstantly. Try it for free.</p>
-          <button>Get it on Chrome</button>
+          <p>A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <button class="blue-btn">Get it on Chrome</button>
           <button>Get it on Firefox</button>
           </span>
       </div>
@@ -45,100 +46,320 @@
       </div>
     </div>
   </div>
+  <main>
+    <section class="features">
+      <div class="features-bg"></div>
+      <h2 class="heading">Features</h2>
+      <p>Our aim is to make it quick and easy for you to access your favorite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
 
-  <!-- 
+      <div class="feature-tabs">
+        <nav>
+          <ul>
+            <li class="simple">Simple Bookmarking</li>
+            <li class="speedy">Speedy Searching</li>
+            <li class="easy">Easy Sharing</li>
+          </ul>
+          <span class="ul-border-bottom"></span>
+        </nav>
+      </div>
+      <div class="feature-contents">
+        <div id="simple" class="features-sub">
+          <div class="features-sub-sub features-img">
+            <img src="images/illustration-features-tab-1.svg" alt="">
+          </div>
+          <div class="features-sub-sub">
+            <section>
 
+            
+              
+              <h3 class="heading">Bookmark in one click</h3>
+              <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
+              <button class="blue-btn">More Info</button>
+            </section>
+          </div>
+        </div>
+        <div id="speedy" class="features-sub">
+          <div class="features-sub-sub features-img">
+            <img src="images/illustration-features-tab-2.svg" alt="">
+          </div>
+          <div class="features-sub-sub">
+            <section>
+              <h3 class="heading">Intelligent search</h3>
+              <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+              <button class="blue-btn">More Info</button>
+            </section>
+          </div>
+        </div>
+        <div id="easy" class="features-sub">
+          <div class="features-sub-sub features-img">
+            <img src="images/illustration-features-tab-3.svg" alt="">
+          </div>
+          <div class="features-sub-sub">
+            <section>
+              <h3 class="heading">Share your bookmarks</h3>
+              <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+              <button class="blue-btn">More Info</button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="download-extension">
+      <h2 class="heading">Download the extension</h2>
+      <p>We've got more browsers in the pipeline. Please do let us know if you've got a favorite you'd like us to prioritize.</p>
+      <div class="download-sub">
+        <div class="download-card chrome">
+          <span>
+            <img src="images/logo-chrome.svg" alt="">
+            <h4>Add to Chrome</h4>
+            <p>Minimum Version 62</p>
+          </span>
+            <button class="blue-btn">Add &amp; Install Extension</button>
+        </div>
+        <div class="download-card firefox">
+          <span>
+            <img src="images/logo-firefox.svg" alt="">
+            <h4>Add to Firefox</h4>
+            <p>Minimum version 55</p>
+          </span>
+            <button class="blue-btn">Add &amp; Install Extension</button>
+        </div>
+        <div class="download-card opera">
+          <span>
+            <img src="images/logo-opera.svg" alt="">
+            <h4>Add to Opera</h4>
+            <p>Minimum version 46</p>
+          </span>
+            <button class="blue-btn">Add &amp; Install Extension</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <div class="faq">
+      <h2 class="heading">Frequently Asked Questions</h2>
+      <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+
+      <div class="harmonica">
+        <div class="harm-section harm-1 active-harm">
+          <div class="harm-head">
+            <span>What is Bookmark?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+          </div>
+          <div class="harm-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+          </div>
+        </div>
+        <div class="harm-section harm-2">
+          <div class="harm-head">
+            <span>How can I request a new browser?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+          </div>
+          <div class="harm-body">
+            <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. </p>
+          </div>
+        </div>
+        <div class="harm-section harm-3">
+          <div class="harm-head">
+            <span>Is there a mobile app?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+          </div>
+          <div class="harm-body">
+            <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.</p>
+          </div>
+        </div>
+        <div class="harm-section harm-4">
+          <div class="harm-head">
+            <span>What about other Chromium browsers?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+          </div>
+          <div class="harm-body">
+            <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   
 
-  
+    
+  </main>
 
-  
-  
 
-  Features
+  <script src="jquery/jquery.js"></script>
+  <script>
 
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
+    // on click function for the simple bookmarking tab button
+    $(".simple").on("click", () => {
+      $(".ul-border-bottom").css({
+        "left": "0",
+        "transition-duration": ".5s"
+      }); 
+      $(".simple").css({
+        "color": "hsl(229, 31%, 21%)",
+        "transition-duration": ".5s"
+      })
+      $(".easy").css({
+        "color": "hsl(229, 8%, 60%)",
+        "transition-duration": ".5s"
+      });
+      $(".speedy").css({
+        "color": "hsl(229, 8%, 60%)",
+        "transition-duration": ".5s"
+      });
+      $("#simple").css({
+        "opacity": "1",
+        "z-index": "2",
+        "transform": "translateX(0vw)",
+        "transition-duration": ".5s"
+      })
+      $("#speedy").css({
+        "opacity": "0",
+        "z-index": "1",
+        "transform": "scale(0)",
+        "transition-duration": ".5s"
+      })
+      $("#easy").css({
+        "opacity": "0",
+        "z-index": "1",
+        "transition-duration": ".5s",
+        "top": "-200%",
+        "transform": "translateX(90vw)",
+      })
+    });
 
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
 
-  Bookmark in one click
+    // on click function for the speedy searching tab button
+    $(".speedy").on("click", () => {
+      $(".ul-border-bottom").css({
+        "left": "calc(40vw / 3)",
+        "transition-duration": ".5s"
+      });
+      $(".speedy").css({
+        "color": "hsl(229, 31%, 21%)",
+        "transition-duration": ".5s"
+      })
+      $(".simple").css({
+        "color": "hsl(229, 8%, 60%)",
+        "transition-duration": ".5s"
+      });
+      $(".easy").css({
+        "color": "hsl(229, 8%, 60%)",
+        "transition-duration": ".5s"
+      })
+      $("#simple").css({
+        "opacity": "0",
+        "z-index": "1",
+        "transform": "translateX(-90vw)",
+        "transition-duration": ".5s"
+      })
+      $("#speedy").css({
+        "opacity": "1",
+        "z-index": "2",
+        "transform": "scale(1)",
+        "transition-duration": ".5s"
+      })
+      $("#easy").css({
+        "opacity": "0",
+        "z-index": "1",
+        "transition-duration": ".5s",
+        "top": "-200%",
+        "transform": "translateX(90vw)",
+      })
+    });
 
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
 
-  More Info
+    // on click function for the easy sharing tab button
+    $(".easy").on("click", () => {
+      $(".ul-border-bottom").css({
+        "left": "calc(40vw - calc(40vw / 3))",
+        "transition-duration": ".5s"
+      });  
+      $(".easy").css({
+        "color": "hsl(229, 31%, 21%)",
+        "transition-duration": ".5s"
+      });
+      $(".simple").css({
+        "color": "hsl(229, 8%, 60%)",
+        "transition-duration": ".5s"
+      });
+      $(".speedy").css({
+        "color": "hsl(229, 8%, 60%)",
+        "transition-duration": ".5s"
+      })
+      $("#simple").css({
+        "opacity": "0",
+        "z-index": "1",
+        "transform": "translateX(-90vw)",
+        "transition-duration": ".5s"
+      })
+      $("#speedy").css({
+        "opacity": "0",
+        "z-index": "1",
+        "transform": "scale(0)",
+        "transition-duration": ".5s"
+      })
+      $("#easy").css({
+        "opacity": "1",
+        "z-index": "2",
+        "transition-duration": ".5s",
+        "top": "-200%",
+        "transform": "translateX(-90vw)",
+      })
+    });
 
-  Intelligent search
+    // animating the Harmonica section
+    $(".harm-1 .harm-head").on("click", () => {
+      console.log("harm-1 head clicked")
+      if($(".harm-1").hasClass("active-harm")) {
+        $(".harm-1").removeClass("active-harm")
+      } else {
+        $(".harm-1").addClass("active-harm")
+      }
+    })
+    
+    $(".harm-2 .harm-head").on("click", () => {
+      console.log("harm-2 head clicked")
+      if($(".harm-2").hasClass("active-harm")) {
+        $(".harm-2").removeClass("active-harm")
+      } else {
+        $(".harm-2").addClass("active-harm")
+      }
+    })
+    
+    $(".harm-3 .harm-head").on("click", () => {
+      console.log("harm-3 head clicked")
+      if($(".harm-3").hasClass("active-harm")) {
+        $(".harm-3").removeClass("active-harm")
+      } else {
+        $(".harm-3").addClass("active-harm")
+        console.log("class added")
+        $(!".harm-3.active-harm").removeClass("active-harm")
+        console.log("class removed")
+      }
+    })
+    
+    $(".harm-4 .harm-head").on("click", () => {
+      console.log("harm-4 head clicked")
+      if($(".harm-4").hasClass("active-harm")) {
+        $(".harm-4").removeClass("active-harm")
+      } else {
+        $(".harm-4").addClass("active-harm")
+        // $(".harmonica").css({
+        //   "border-bottom": "none"
+        // })
+      }
+    })
+    
+  </script>
 
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
 
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info
-
-  Download the extension
-
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
-
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
-
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
-
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
-
-  Frequently Asked Questions -->
-
-  <!-- Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us. -->
-
-  <!-- Question 1 -->
-  <!-- What is Bookmark? -->
-
-  <!-- Answer 1 -->
-  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis. -->
-
-  <!-- Question 2 -->
-  <!-- How can I request a new browser? -->
-
-  <!-- Answer 2 -->
-  <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. -->
-
-  <!-- Question 3 -->
-  <!-- Is there a mobile app? -->
-
-  <!-- Answer 3 -->
-  <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum. -->
-
-  <!-- Question 4 -->
-  <!-- What about other Chromium browsers? -->
-
-  <!-- Answer 4 -->
-  <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
+  <!-- More Info
 
   35,000+ already joined
 

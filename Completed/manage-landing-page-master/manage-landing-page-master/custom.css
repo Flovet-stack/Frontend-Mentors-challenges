@@ -1,0 +1,749 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Be Vietnam', sans-serif;
+    background: url(images/bg-tablet-pattern.svg);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 860px;
+    background-position-y: -170px;
+    /* background-color: hsl(13, 100%, 96%); */
+}
+.container {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Header section */
+header {
+    width: 100%;
+    height: 20vh;
+    /* background: transparent; */
+}
+.header-con {
+    display: flex;
+    justify-content: space-between;
+}
+#header-logo {
+    width: 20%;
+    display: grid;
+    align-content: center;
+}
+header nav {
+    width: 60%;
+    height: 20vh;
+    display: grid;
+    align-content: center;
+}
+header ul {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+header li {
+    list-style-type: none;
+}
+header a {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(228, 39%, 23%);
+    transition-duration: .5s;
+}
+header a:hover {
+    color: hsl(227, 12%, 61%);
+    transition-duration: .3s;
+    cursor: pointer;
+}
+#header-btn {
+    width: 20%;
+    height: 20vh;
+    display: grid;
+    align-content: center;
+}
+#header-btn  div {
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+button:hover {
+    background-color: hsl(12, 94%, 65%);
+    cursor: pointer;
+}
+header button {
+    width: 60%;
+}
+button {
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    box-shadow: 0 3px 15px 5px hsl(11, 68%, 88%);
+    background-color: hsl(12, 88%, 59%);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+p {
+    color: hsl(227, 12%, 61%);
+}
+header input[type="checkbox"] {
+    display: none;
+}
+#toggle2 {
+    display: none;
+}
+#toggle1 {
+    display: none;
+}
+
+/* Hero section */
+#hero {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+}
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+}
+#hero-sub-1 {
+    width: 50%;
+    height: auto;
+    display: grid;
+    align-content: center;
+} 
+#hero-sub-2 {
+    text-align: right;
+}
+#hero-sub-3 {
+    display: none;
+}
+#hero img {
+    width: 100%;
+}
+#hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+#hero p {
+    width: 60%;
+    margin-bottom: 50px;
+}
+#hero button {
+    width: 30%;
+}
+
+#second-bg {
+    width: 100%;
+    height: auto;
+    background: url(images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position-x: -500px;
+    background-position-y: 200px;
+}
+/* Section 2  *************************************************/
+#section-2 {
+    width: 100%;
+    height: auto;
+}
+#section-2-sub-1 {
+    width: 50%;
+    height: auto;
+}
+#section-2-sub-1 h2 {
+    width: 80%;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+#section-2-sub-1 p {
+    font-size: 18px;
+    width: 60%;
+    line-height: 1.5;
+}
+#section-2-sub-2 {
+    width: 50%;
+    height: auto;
+}
+#section-2-sub-2 section {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+#section-2-sub-2 section span {
+    display: flex;
+    width: 100%;
+}
+#section-2-sub-2 .num {
+    width: 20%;
+    height: 40px;
+}
+#section-2-sub-2 h3 {
+    width: fit-content;
+    background-color: hsl(12, 94%, 65%);
+    color: #fff;
+    font-size: 22px;
+    padding: 5px 20px 9px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-right: 30px;
+}
+#section-2-sub-2 section {
+    margin-bottom: 50px;
+}
+#section-2-sub-2 h4 {
+    height: 40px;
+    display: grid;
+    align-content: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#section-2-sub-2 p {
+    padding-left: 20%;
+    line-height: 1.7;
+}
+
+/* Testimonials section ************************************** */
+
+#testimonials {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 60px 0;
+}
+#testimonials h2 {
+    font-size: 45px;
+    margin-bottom: 100px;
+}
+#testimonials-sub {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#testimony {
+    width: 24%;
+    height: auto;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+#testimony img {
+    margin-top: -50px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+#testimony h3 {
+    margin-bottom: 20px;
+}
+#testimony p {
+    width: 80%;
+    margin: 20px auto;
+}
+#testimonials button {
+    margin-top: 60px;
+    width: 12%;
+}
+
+/* simplify section **************** */
+#simplify {
+    width: 100%;
+    height: 40vh;
+    background: url(images/bg-simplify-section-desktop.svg);
+    background-size: 1750px;
+    background-repeat: no-repeat;
+    background-position-x: 100px;
+    background-position-y: -150px;
+    background-color: hsl(12, 88%, 59%);
+}
+#simplify .container {
+    justify-content: space-between;
+}
+#simplify button {
+    width: 170px;
+    box-shadow: none;
+    background-color: #fff;
+    color: hsl(12, 88%, 59%);
+}
+#simplify h2 {
+    font-size: 45px;
+    color: #fff;
+}
+#simplify button:hover {
+    color: hsl(12, 91%, 68%);
+    box-shadow: 0 0 5px 1px #fff;
+}
+#simplify-sub {
+    height: 40vh;
+    display: grid;
+    align-content: center;
+}
+#simplify-btn {
+    height: 40vh;
+    display: grid;
+    align-content: center;
+}
+
+/* footer design**************************************** */
+footer {
+    width: 100%;
+    padding: 50px 0;
+    background-color: hsl(233, 12%, 13%);
+}
+footer .container {
+    justify-content: space-between;
+}
+#footer-sub-1 ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+}
+#footer-sub-1 a:hover path {
+    fill: hsl(12, 88%, 59%);
+}
+footer span {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+footer span ul {
+    margin-right: 10rem;
+}
+footer li {
+    padding: 8px 0;
+    list-style-type: none;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: hsl(12, 88%, 59%)
+}
+#footer-sub-2 {
+    height: 100%;
+    text-align: right;
+}
+footer h6 {
+    margin-top: 90px;
+    font-size: 13px;
+    color: hsl(227, 12%, 61%);
+}
+footer form {
+    width: auto;
+    height: 50px;
+    display: flex;
+}
+footer input {
+    height: 100%;
+    width: 250px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+footer input::placeholder {
+    padding-left: 20px;
+}
+footer button {
+    width: 70px;
+    box-shadow: none;
+}
+
+/* Scrollbar styling */
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 0;
+}
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    /* z-index: 1; */
+    border-radius: 50px;
+    background-color: hsl(12, 76%, 77%);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+
+/*********************************************************************
+ * RESPONSIVE DESIGN**************************************************
+ * *******************************************************************/
+
+/* Responsive Design  */
+@media only screen and (max-width: 768px) {
+body {
+    width: 100vw;
+    background-size: 500px;
+    background-position-x: 60px;
+    background-position-y: -100px;
+}
+.container {
+    width: 80%;
+    height: auto;
+    display: grid;
+    margin: 0 auto;
+}
+
+/* Header section */
+header {
+    width: 100%;
+    height: 20vh;
+    top: 0;
+    /* background: transparent; */
+}
+.header-con {
+    display: flex;
+    justify-content: space-between;
+}
+#header-logo {
+    width: 60%;
+    height: 20vh;
+    display: grid;
+    align-content: center;
+}
+header label {
+    height: 20vh;
+    display: grid;
+    align-content: center;
+    font-size: 32px;
+}
+header span {
+    margin-top: -10px;
+}
+header input[type="checkbox"] {
+    display: none;
+}
+#toggle2 {
+    display: none;
+}
+#toggle1 {
+    display: grid;
+}
+header input:checked ~ #toggle1 {
+    display: none;
+}
+header input:checked ~ #toggle2 {
+    display: grid;
+    z-index: 3;
+    position: fixed;
+    left: 100%;
+    transform: translateX(-200%);
+}
+header input:checked header {
+    background-color: rgba(2, 2, 2, 0.205);
+}
+header nav {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    background-color: rgba(2, 2, 2, 0.616);
+    position: fixed;
+    left: 0;
+    display: none;
+}
+header ul {
+    width: 85%;
+    height: 40vh;
+    display: grid;
+    text-align: center;
+    margin-top: 20vh;
+    padding: 40px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+header a:hover {
+    color: hsl(12, 88%, 59%);
+}
+header button {
+    display: none;
+}
+
+/* Hero section */
+#hero {
+    /* display: none; */
+    margin-top: -1vh;
+    width: 100%;
+    height: auto;
+}
+#hero .container {
+    display: block;
+    justify-content: space-between;
+}
+#hero-sub-1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-content: center;
+} 
+#hero-sub-2 {
+    display: none;
+}
+#hero-sub-3 {
+    display: block;
+    width: 100%;
+}
+#hero h1 {
+    font-size: 35px;
+    text-align: center;
+}
+#hero p {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#hero button {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#second-bg {
+    background: none;
+}
+/* Section 2  *************************************************/
+#section-2-sub-1 {
+    width: 100%;
+    height: auto;
+}
+#section-2-sub-1 h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+#section-2-sub-1 p {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#section-2-sub-2 {
+    width: 100%;
+}
+#section-2-sub-2 section span {
+    display: flex;
+    width: 100%;
+    background-color: #FFF0EC;
+    height: 40px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 10px;
+}
+#section-2-sub-2 .num {
+    width: 18%;
+    height: 40px;
+}
+#section-2-sub-2 h3 {
+    width: fit-content;
+    height: 40px;
+    display: grid;
+    align-content: center;
+    padding: 0 12px 0 12px;
+}
+#section-2-sub-2 h4 {
+    font-size: 15px;
+}
+#section-2-sub-2 p {
+    padding-left: 0;
+}
+
+/* Testimonials section ************************************** */
+
+#testimonials {
+    /* display: none; */
+    width: 80%;
+    margin: 60px auto;
+    height: auto;
+    text-align: center;
+}
+#testimonials h2 {
+    font-size: 35px;
+    margin-bottom: 100px;
+}
+#testimonials-sub {
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: space-evenly;
+}
+#testimony {
+    width: 100%;
+    height: auto;
+    background-color: hsl(200, 19%, 97%);
+    border-radius: 8px;
+    margin: 5rem 0;
+    padding-bottom: .5rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+#testimony img {
+    margin-top: -50px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+#testimony h3 {
+    margin-bottom: 20px;
+}
+#testimony p {
+    width: 80%;
+    margin: 20px auto;
+}
+#testimonials button {
+    margin-top: 60px;
+    width: 50%;
+}
+
+/* simplify section **************** */
+#simplify {
+    /* display: none; */
+    width: 100%;
+    height: auto;
+    background: url(images/bg-simplify-section-desktop.svg);
+    background-size: 1750px;
+    background-repeat: no-repeat;
+    background-position-x: 100px;
+    background-position-y: -150px;
+    background-color: hsl(12, 88%, 59%);
+}
+#simplify .container {
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+}
+#simplify h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+#simplify button {
+    margin: 0 auto;
+}
+#simplify-sub {
+    height: auto;
+}
+#simplify-btn {
+    height: auto;
+}
+
+/* footer design**************************************** */
+footer {
+    width: 100%;
+    padding: 70px 0;
+    background-color: hsl(233, 12%, 13%);
+    /* display: none; */
+}
+footer .container {
+    justify-content: space-between;
+}
+#footer-sub-1 ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+#footer-sub-1 a:hover path {
+    fill: hsl(12, 88%, 59%);
+}
+footer span {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+footer span ul {
+    margin-right: 0;
+}
+footer li {
+    padding: 8px 0;
+    list-style-type: none;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+footer a:hover {
+    color: hsl(12, 88%, 59%)
+}
+#footer-sub-2 {
+    height: 100%;
+    text-align: right;
+}
+footer h6 {
+    margin-top: 40px;
+    font-size: 13px;
+    color: hsl(227, 12%, 61%);
+    text-align: center;
+}
+footer form {
+    width: auto;
+    height: 50px;
+    display: flex;
+}
+footer input {
+    height: 100%;
+    width: 250px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+footer input::placeholder {
+    padding-left: 20px;
+}
+footer button {
+    width: 70px;
+    box-shadow: none;
+}
+
+/* Scrollbar styling */
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 0;
+    display: none;
+}
+.show {
+    display: block !important;
+}
+}
